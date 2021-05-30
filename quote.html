@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact Form</title>
+	<style>
+		
+		body{
+			background-color: white;
+		}
+		fieldset{
+			
+			background-color: whitesmoke;
+			padding-top: 0px;
+			padding-bottom: 100px;
+			margin-right: 20%;
+			margin-left: 20%;
+			margin-top:10%;
+		}
+		
+	label {
+		font-weight: bold;
+		color: navy;
+		padding: 5px;
+	}
+
+
+
+		
+		input[type="submit"]{
+			float:left;
+			clear:both;
+			margin-top:10px;
+			
+		}
+		
+
+        input[type ="button"] {
+            color: orange;
+            background-color:yellow;
+}
+		
+
+		.quoteLabel{
+			float: left;
+			width: 20%;
+		}
+		
+	</style>
+</head>
+<body>
+
+
+<form action="quote_process.php" method="POST">
+	<fieldset>
+	<h1>Input Your Favorite Quote</h1>
+	  <p>
+		  <label>
+			  <input type="text" name="quote">
+		</p>
+		  </label>
+		<input type="submit" name="submit" value="Submit">
+	</fieldset>
+
+</form>
+<a href="population.php"><input type="button" value="Population Assignment"></a>
+</body>
+</html>

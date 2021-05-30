@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Contact Form</title>
+	<style>
+		
+		body{
+			background-color: #0F2769
+		}
+		fieldset{
+			background-image: url(https://i.imgur.com/fH5TQmT.jpg);
+			background-repeat:no-repeat;
+			background-position: top right;
+			background-attachment: fixed;
+			background-color: white;
+			background-size: 600px 550px;
+			padding-top: 0px;
+			padding-bottom: 100px;
+			margin-top:10px;
+			margin-bottom:10px;
+		}
+		
+	label {
+		font-weight: bold;
+		color: navy;
+		padding: 5px;
+	}
+	
+	ul{
+			float:left;
+			clear:both;
+			margin-top:-15px;
+			margin-left:18px;
+			list-style-type:none;
+		}
+	
+	textarea{
+		float:left;
+		clear:both;
+		padding-right: 50px;
+		margin-left:80px;
+		
+	}
+	
+	span{
+			float:left;
+			clear:both;
+		}
+	
+		input[type="radio"]{
+			margin-right: 10px;
+		}
+		
+		input[type="submit"]{
+			float:left;
+			clear:both;
+			margin-top:10px;
+			margin-left:50px;
+			
+		}
+		
+
+		.name{
+			float: left;
+			width: 20%;
+		}
+		
+		#email_address{
+			float: left;
+			clear: both;
+		}
+		#gender{
+			float: left;
+			clear: both;
+		}
+		#age{
+			float: left;
+			clear: both;
+		}
+		#comment{
+			float: left;
+			clear: both;
+		}
+		
+		#hobbies{
+			float:left;
+			clear:both;
+		}
+		
+		#donation{
+			float:left;
+			clear:both;
+		}
+		
+		#mail{
+			float:left;
+			clear:both;
+			font-size:.8em;
+		}
+		
+	</style>
+</head>
+<body>
+
+
+<form action="process_contact.php" method="POST">
+	<fieldset>
+	<h1>Contributor</h1>
+	  <p>
+		  <label class="name">
+			  First Name: <input type="text" name="first_name" required>
+		  
+		  </label>
+		</p>
+	   <p>
+		   <label class="name">
+			   Last Name: <input type="text" name="last_name" required>
+		   
+		   </label>
+		
+		</p>
+
+	<p>
+		<label id="email_address">
+			
+			Email Address: <input type="email" name="email" size="40" maxlength="60" required>
+		
+		</label>
+		</p>
+
+	<p><label id="gender">Gender:
+		<select name="gender">
+		
+		<option value:"Male" required> Male</option>
+		<option value:"Female" required> Female</option> 
+		<option value:"NA" required> Prefer not to say</option>
+		</select></label>
+		</p>
+
+	<p><label id="age">Age:
+	<select name="age">
+		<option value="0-29" required>Under 30</option>
+		<option value="30-60" required>Between 30 and 60</option>
+		<option value="60+" required>Over 60</option>
+	</select></label></p>
+	
+	<p id="hobbies">
+		<label>Interest: </label>
+		<ul>
+			<li><input type="checkbox" name="1" value="Soccer">Soccer </li>
+			<li><input  type="checkbox" name="2" value="Football">Football</li>
+			<li><input type="checkbox" name="3" value="Tennis">Tennis</li>
+			<li><input type="checkbox" name="4" value="Basketball">Basketball</li>
+			<li><input  type="checkbox" name="5" value="Swim">Swim</li>
+			<li><input type="checkbox" name="6" value="Track">Track</li>
+		</ul>
+		</p>
+		
+		<p><label id="donation">
+			   Donation: $<input type="number" name="donation"  value="0.00">
+		   </label>
+		</p>
+
+	<p>
+		<label id="comment">
+			<span>Comments:</span> <textarea name="comments" rows="3" cols="40"></textarea>
+		</label>
+	</p>
+	<p id="mail">Sign up for our mailing list: <input type="checkbox" name="mailing" value="yes"> </p>
+	
+	<p align="center">
+		<input type="submit" name="submit" value="Submit My Information">
+	</p>
+	
+	
+	</fieldset>
+
+</form>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Tuition Calculator</title>
+</head>
+
+<body>
+	<header>
+		<img src="http://www.pacific-gateway.org/images/all%20in/lbcc.png" alt="logo" width="50%" height="100%">
+     <h1>Tuition Calculator</h1>
+    <h3> Fill out this form to calculate the cost of tuition</h3>
+    </header>
+	
+    <fieldset>
+			<form action="process_tuition.php" method="post" >
+ 		<div>
+			<label>Are you a California Resident: </label>
+				<select  name ="resident" required>
+					<option value="">Select Resident Status</option>
+					<option value="46">Resident</option>
+					<option value="274">Non-Resident </option>
+				</select>
+		</div>
+  
+ 		<div>
+			<label>Number of Units: </label>
+				<select name="numberofunits" required>
+				<option value="">Select Option</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+			</select>
+					
+					
+<p>There is a <b>Manditory</b> Student Health Fee of <strong>$21</strong>  for all registered students:</p>
+
+<h4>Optional Fees:</h4>
+			
+<div>
+<label>College Service Card: </label>
+ <select name ="servicecardfee" required>
+	 <option value="">Select Option</option>
+     <option value="20">Yes</option>
+	 <option value="0">no</option>
+ </select>
+	</div>
+			
+  <div>
+ <label>Parking Permit:</label>
+			<select name ="parking" required>
+				<option value="">Select Option</option>
+				<option value="30">Yes</option>
+				<option value="0">no</option>
+			</select>
+ </div>
+ 
+			<div>
+			<input type="submit" name="submit" value="Submit my information">
+			</div>
+</form>
+</fieldset>
+     <footer>
+         <p>&copy; Jesus Castaneda COSW 30, 2018</p>
+     </footer>
+    
+</body>
+</html>
